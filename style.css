@@ -1,0 +1,9 @@
+.cards{
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#radioContainer {
+    margin-top:70px;
+}
