@@ -185,9 +185,50 @@ const radioButtons = document.querySelectorAll('input[name="homeworld"]');
 radioButtons.forEach((radio) => {
   radio.addEventListener("change", () => {
     if (radio.checked) {
-      const filteredHomeworld = data.filter();
+      const filteredHomeworld = data.filter((karakter)=> karakter.homeworld == radio.value)
       console.log(`Seçilen gezegen${radio.value}`);
+      console.log(filteredHomeworld)
+       // belirli kartları açmak için
+
+       if (row.innerHTML == "") { 
+        //row un içi boş mu dolu ona baktık
+        
+        filteredHomeworld.forEach((karakter) => {
+    // += anlamı - teker teker görselleri okuyup sitede yayınlıyor + olmazsa sonuncu resim geliyor sadece
+          row.innerHTML += `  
+        <div class="col-lg-3 cards" >
+        <img src="${karakter.pic}" width=100px>
+    
+        <p>${karakter.name}
+        </p>
+        <p>${karakter.homeworld}</p>
+        
+        </div>
+        `;
+        });
+
+    
+      }
+      else {
+        row.innerHTML =''
+          //seçtiğimiz kartlar 2şer 3 er gelmesin diye içeriyi else ile temizliyoruz.
+        filteredHomeworld.forEach((karakter) => {
+          // += anlamı - teker teker görselleri okuyup sitede yayınlıyor + olmazsa sonuncu resim geliyor sadece
+                row.innerHTML += `  
+              <div class="col-lg-3 cards" >
+              <img src="${karakter.pic}" width=100px>
+          
+              <p>${karakter.name}
+              </p>
+              <p>${karakter.homeworld}</p>
+              </div>
+              `;
+              });
+      }
     }
   });
 });
-console.log(radioButtons)
+//içerisinde gezip tiklenen hangisiyle onu göstermek için  
+
+
+
