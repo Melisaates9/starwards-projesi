@@ -15,9 +15,7 @@
 body{
     background-image:url("image/starwars.jpg");
     background-size: cover; 
-    background-repeat: no-repeat; 
-
-
+    background-repeat: no-repeat;
 }
 .karakterButonu{
     border-radius: 5px;
