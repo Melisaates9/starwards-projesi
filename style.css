@@ -3,7 +3,22 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    color: white;
+    background: #afa8a8d0;
+    width: 100px;
 }
 #radioContainer {
     margin-top:70px;
+    background-color: rgba(0, 255, 255, 0.597);
+    display: inline-block;
+}
+body{
+    background-image:url("image/starwars.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+
+
+}
+.karakterButonu{
+    border-radius: 5px;
 }

@@ -120,7 +120,7 @@ const data = [
   },
 ];
 const row = document.querySelector(".row");
-const button = document.querySelector(".karaterButonu");
+const button = document.querySelector(".karakterButonu");
 function karakter() {
   //if else yazıdğımız yer ve karaktere boyut verip foreach ile içerisinde araştırıp tek button ile getirdiğimiz yer ve görselleri.
   if (row.innerHTML == "") {
