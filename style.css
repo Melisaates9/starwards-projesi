@@ -4,19 +4,30 @@
     display: flex;
     flex-direction: column;
     color: white;
-    background: #afa8a8d0;
+    background: #afa8a84f;
     width: 100px;
+   margin-top:100px;
 }
 #radioContainer {
     margin-top:70px;
-    background-color: rgba(0, 255, 255, 0.597);
+   color: white;
+   font-weight: bold;
     display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+   
 }
 body{
     background-image:url("image/starwars.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .karakterButonu{
     border-radius: 5px;
+    
+
 }
